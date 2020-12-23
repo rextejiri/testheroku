@@ -5,7 +5,7 @@ const app = express();
 const db = mongoose.connection
 require('dotenv').config();
 
-const PORT = process.env.PORT || 3003
+const PORT = process.env.PORT
 
 // pulling MONGODB_URI data base from dotenv
 const MONGODB_URI = process.env.MONGODB_URI;
