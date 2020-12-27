@@ -5,7 +5,10 @@ const app = express();
 const db = mongoose.connection
 require('dotenv').config();
 
-const PORT = process.env.PORT
+// requiring Routes
+const Product = require('./models/store.js');
+
+const PORT = process.env.PORT || 3000
 
 // pulling MONGODB_URI data base from dotenv
 const MONGODB_URI = process.env.MONGODB_URI;
@@ -39,9 +42,46 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 // Routes
 //___________________
 //localhost:3000
-app.get('/' , (req, res) => {
-  res.send('Hello World!');
+
+app.get('/home/seed', (req, res) => {
+  Product.create(
+    [
+      {
+        name: 'westly',
+        description: 'shoe',
+        price: 234,
+        qty: 3,
+        img: 'https://wallpaperaccess.com/full/30100.jpg'
+      }
+    ],
+    (err, data) => {
+      res.redirect('/home')
+    }
+  )
+})
+
+app.get('/home/new', (req, res) => {
+    res.render('new.ejs');
 });
+
+app.get('/home', (req, res) => {
+  Product.find({}, (error, allProducts) => {
+    res.render(
+      'index.ejs',
+      {
+        products: allProducts
+      }
+    )
+  })
+
+})
+
+// post route
+app.post('/home', (req, res) => {
+    Product.create(req.body, (error, createdProduct) => {
+        res.redirect('/home')
+    })
+})
 
 //___________________
 //Listener
