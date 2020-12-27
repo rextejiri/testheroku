@@ -64,6 +64,17 @@ app.get('/home/new', (req, res) => {
     res.render('new.ejs');
 });
 
+app.get('/home/:id', (req, res) => {
+    Product.findById(req.params.id, (error, foundProduct) => {
+        res.render(
+            'show.ejs',
+            {
+                product:foundProduct
+            }
+        );
+    })
+});
+
 app.get('/home', (req, res) => {
   Product.find({}, (error, allProducts) => {
     res.render(
@@ -86,4 +97,4 @@ app.post('/home', (req, res) => {
 //___________________
 //Listener
 //___________________
-app.listen(PORT, () => console.log( 'Listening on port:', PORT));
+app.listen(PORT, () => console.log( 'warrior🧜🏿🧜🏿', PORT ,"🧜🏿🧜🏿🧜🏿🧜🏿🧜🏿🧜🏿🧜🏿🧜🏿"));
