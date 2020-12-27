@@ -75,6 +75,12 @@ app.get('/home/:id', (req, res) => {
     })
 });
 
+app.delete('/home/:id', (req, res) => {
+  Product.findByIdAndRemove(req.params.id, (error, deletedProduct) => {
+    res.redirect('/home')
+  })
+})
+
 app.get('/home', (req, res) => {
   Product.find({}, (error, allProducts) => {
     res.render(

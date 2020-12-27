@@ -7,5 +7,8 @@
   <body>
     <h1>Showpage</h1>
     <%= product.name%>
+    <form action="/home/<%=product._id; %>?_method=DELETE" method="POST">
+      <input type="submit" name="" value="Delete">
+    </form>
   </body>
 </html>
