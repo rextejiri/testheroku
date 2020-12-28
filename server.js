@@ -58,7 +58,7 @@ app.get('/home/:id/edit', (req, res) => {
 
 app.put('/home/:id', (req, res) => {
   Product.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedProduct) => {
-    res.redirect('/home');
+    res.redirect(`/home/${req.params.id}`);
   });
 });
 
@@ -102,6 +102,17 @@ app.get('/home/:id', (req, res) => {
         );
     })
 });
+
+// buy route
+//___________
+
+
+
+app.put('/home/:id/buy', (req, res) => {
+  Product.findByIdAndUpdate(req.params.id, {$inc: {qty: -1} }, (error, boughtProduct) => {
+    res.redirect(`/home/${req.params.id}`)
+  })
+})
 
 // delete route
 
