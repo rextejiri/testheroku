@@ -40,9 +40,23 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
 //___________________
 // Routes
-//___________________
-//localhost:3000
 
+//___________________
+// edit Route
+//__________________
+
+app.get('/home/:id/edit', (req, res) => {
+  Product.findById(req.params.id, (error, foundProduct) => {
+    res.render(
+      'edit.ejs',
+      {
+        product: foundProduct
+      }
+    )
+  });
+});
+
+// seed route
 app.get('/home/seed', (req, res) => {
   Product.create(
     [
@@ -60,10 +74,14 @@ app.get('/home/seed', (req, res) => {
   )
 })
 
+
+// new route
 app.get('/home/new', (req, res) => {
     res.render('new.ejs');
 });
 
+
+// show route
 app.get('/home/:id', (req, res) => {
     Product.findById(req.params.id, (error, foundProduct) => {
         res.render(
@@ -75,12 +93,16 @@ app.get('/home/:id', (req, res) => {
     })
 });
 
+// delete route
+
 app.delete('/home/:id', (req, res) => {
   Product.findByIdAndRemove(req.params.id, (error, deletedProduct) => {
     res.redirect('/home')
   })
 })
 
+
+// index route
 app.get('/home', (req, res) => {
   Product.find({}, (error, allProducts) => {
     res.render(
@@ -103,4 +125,4 @@ app.post('/home', (req, res) => {
 //___________________
 //Listener
 //___________________
-app.listen(PORT, () => console.log( 'warrior🧜🏿🧜🏿', PORT ,"🧜🏿🧜🏿🧜🏿🧜🏿🧜🏿🧜🏿🧜🏿🧜🏿"));
+app.listen(PORT, () => console.log( 'Guidian Angel🧞‍♂️🧞‍♂️🧞‍♂️🧞‍♂️🧞‍🧞‍♂️🧞‍♂️🧞‍♂️🧞‍♂️🧞',PORT));
