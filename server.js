@@ -56,6 +56,16 @@ app.get('/home/:id/edit', (req, res) => {
   });
 });
 
+app.put('/home/:id', (req, res) => {
+  Product.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedProduct) => {
+    res.redirect('/home');
+  });
+});
+
+// app.put('/home/:id', (req, res) => {
+//   res.send(req.body)
+// });
+
 // seed route
 app.get('/home/seed', (req, res) => {
   Product.create(
