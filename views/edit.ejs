@@ -7,6 +7,9 @@
   <body>
     <h1>edit page here</h1>
     <h3><%=product.name%></h3>
+
+    <form action="/home/<%=product._id%>?_method=PUT" method="POST">
+      <input type="text" name="" value="<%=product.name%>">
+    </form>
   </body>
 </html>
-mongod --dbpath ~/dev/data/db/
