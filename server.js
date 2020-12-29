@@ -8,6 +8,7 @@ const methodOverride = require('method-override');
 const mongoose = require('mongoose');
 const app = express();
 const db = mongoose.connection
+const session = require('express-session');
 require('dotenv').config();
 
 
@@ -39,7 +40,15 @@ app.use(express.json());
 app.use(methodOverride('_method'));
 const storeController = require('./controllers/store_controller.js');
 app.use('/home', storeController)
-
+const usersController = require('./controllers/users_controller.js');
+app.use('/user', usersController)
+app.use(
+  session({
+    secret: process.env.SECRET,
+    resave: false,
+    saveUninitialized: false
+  })
+)
 
 
 
