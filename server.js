@@ -38,10 +38,6 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(methodOverride('_method'));
-const storeController = require('./controllers/store_controller.js');
-app.use('/home', storeController)
-const usersController = require('./controllers/users_controller.js');
-app.use('/user', usersController)
 app.use(
   session({
     secret: process.env.SECRET,
@@ -49,6 +45,19 @@ app.use(
     saveUninitialized: false
   })
 )
+
+//===================
+//controllers
+//===================
+
+
+const storeController = require('./controllers/store_controller.js');
+app.use('/home', storeController)
+const usersController = require('./controllers/users_controller.js');
+app.use('/user', usersController)
+const sessionsController = require('./controllers/sessions_controller.js')
+app.use('/sessions', sessionsController)
+
 
 
 

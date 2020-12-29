@@ -5,7 +5,17 @@
     <title></title>
   </head>
   <body>
-    <h1>we live</h1>
+    <h1>index page</h1>
+    <% if (currentUser) {%>
+      <li>Hola <%=currentUser.username%></li>
+      <form action="/sessions?_method=DELETE" method="post">
+          <input type="submit" name="" value="Log Out">
+      </form>
+    <%} else { %>
+      <a href="/sessions/new">log in</a>
+      <a href="/users/new">Sign Up</a>
+    <%}%>
+
     <ul>
       <% for (var i = 0; i < products.length; i++) {%>
         <li>
@@ -18,5 +28,6 @@
         </li>
       <%}%>
     </ul>
+
   </body>
 </html>

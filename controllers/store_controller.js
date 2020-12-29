@@ -18,7 +18,8 @@ router.get('/:id/edit', (req, res) => {
     res.render(
       'edit.ejs',
       {
-        product: foundProduct
+        product: foundProduct,
+        currentUser: req.session.currentUser
       }
     )
   });
@@ -63,7 +64,13 @@ router.get('/seed', (req, res) => {
 
 
 router.get('/new', (req, res) => {
-    res.render('new.ejs');
+    res.render(
+      'new.ejs',
+      {
+        currentUser: req.session.currentUser
+      }
+
+    )
 });
 
 
@@ -77,7 +84,8 @@ router.get('/:id', (req, res) => {
         res.render(
             'show.ejs',
             {
-                product:foundProduct
+                product:foundProduct,
+                currentUser: req.session.currentUser
             }
         );
     })
@@ -113,7 +121,8 @@ router.get('/', (req, res) => {
     res.render(
       'index.ejs',
       {
-        products: allProducts
+        products: allProducts,
+        currentUser: req.session.currentUser
       }
     )
   })
