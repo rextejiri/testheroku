@@ -3,31 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <h1>Home Page</h1>
-    <% if (currentUser) {%>
-      <li>Hola <%=currentUser.username%></li>
-      <form action="/sessions?_method=DELETE" method="post">
-          <input type="submit" name="" value="Log Out">
-      </form>
-    <%} else { %>
-      <a href="/sessions/new">log in</a>
-      <a href="/users/new">Sign Up</a>
-    <%}%>
-
-    <ul>
+    <div class="header">
+      <header>
+        <% if (currentUser) {%>
+          <li>Hola <%=currentUser.username%></li>
+          <form action="/sessions?_method=DELETE" method="post">
+              <input type="submit" name="" value="Log Out">
+          </form>
+        <%} else { %>
+          <a href="/sessions/new">log in</a>
+          <a href="/users/new">Sign Up</a>
+        <%}%>
+      </header>
+    </div>
+    <%# header div ends here %>
       <% for (var i = 0; i < products.length; i++) {%>
-        <li>
-
+        <div class="image">
           <a href="/home/<%= products[i].id%>">
-            <%= products[i].name%>
-          <img src="<%= products[i].img%>" alt="">
+          <img src="<%= products[i].img%>" alt="photo">
 
           </a>
-        </li>
+        </div>
       <%}%>
-    </ul>
-
+      <div class="allcandles">
+        <p>All Candles</p>
+      </div>
+      <div class="allCandles">
+        <img src="" alt="photo">
+      </div>
+      <div class="footer">
+        <footer></footer>
+      </div>
   </body>
 </html>

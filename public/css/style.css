@@ -1,0 +1,25 @@
+
+
+:root{
+  --fade60: rgba(0, 0, 0, 0.6);
+  --footer: #474732;
+  --footerTextColor: rgba(255, 0, 0, 0.7);
+  --navigation: rgba(180, 183, 69, .35);
+  --bodytext: #474732;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  overflow: auto;
+}
+img{
+  width: 300px;
+  height: 300px;
+
+}
