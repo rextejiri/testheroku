@@ -1,4 +1,4 @@
-//===========
+//=================
 // dependencies
 //==================
 
@@ -37,6 +37,24 @@ router.put('/:id', (req, res) => {
 
 
 //===================
+//welcome route
+//===================
+
+
+router.get('/welcome', (req, res) => {
+  Product.find({}, (error, allProducts) => {
+    res.render(
+      'welcome.ejs',
+      {
+        products: allProducts,
+        currentUser: req.session.currentUser
+      }
+    )
+  })
+
+})
+
+//===================
 //Seed Route
 //===================
 
@@ -44,11 +62,20 @@ router.get('/seed', (req, res) => {
   Product.create(
     [
       {
-        name: 'westly',
-        description: 'shoe',
-        price: 234,
-        qty: 3,
-        img: 'https://wallpaperaccess.com/full/30100.jpg'
+        name: 'TATINE',
+        price: 43.00,
+        img: 'https://cdn.shopify.com/s/files/1/0315/1160/9388/products/Stars_are_Fire_SiloB-high-res_8f249c92-8d1d-401b-b956-49760d235d9b_1512x.jpg?v=1598030521',
+        img2: 'https://cdn.shopify.com/s/files/1/0315/1160/9388/products/Stars_are_Fire_Silo-high-res_dad5e3c9-ac8e-486e-8ec8-ab8948167d1f_1512x.jpg?v=1598030521',
+        description: 'Spirit House Candle - 8 OZ',
+
+      },
+      {
+        name: 'TATINE',
+        price: 43.00,
+        img: 'https://cdn.shopify.com/s/files/1/0315/1160/9388/products/Stars_are_Fire_SiloB-high-res_8f249c92-8d1d-401b-b956-49760d235d9b_1512x.jpg?v=1598030521',
+        img2: 'https://cdn.shopify.com/s/files/1/0315/1160/9388/products/Stars_are_Fire_Silo-high-res_dad5e3c9-ac8e-486e-8ec8-ab8948167d1f_1512x.jpg?v=1598030521',
+        description: 'Spirit House Candle - 8 OZ',
+
       }
     ],
     (err, data) => {
@@ -91,9 +118,13 @@ router.get('/:id', (req, res) => {
     })
 });
 
+
+
 //===================
 //Buy Route
 //===================
+
+
 
 router.put('/:id/buy', (req, res) => {
   Product.findByIdAndUpdate(req.params.id, {$inc: {qty: -1} }, (error, boughtProduct) => {
@@ -101,9 +132,12 @@ router.put('/:id/buy', (req, res) => {
   })
 })
 
+
 //===================
 //Delete Route
 //===================
+
+
 
 router.delete('/:id', (req, res) => {
   Product.findByIdAndRemove(req.params.id, (error, deletedProduct) => {
@@ -115,6 +149,8 @@ router.delete('/:id', (req, res) => {
 //===================
 //Index Route
 //===================
+
+
 
 router.get('/', (req, res) => {
   Product.find({}, (error, allProducts) => {
@@ -133,10 +169,14 @@ router.get('/', (req, res) => {
 //Create / Post Route
 //===================
 
+
+
 router.post('/', (req, res) => {
     Product.create(req.body, (error, createdProduct) => {
         res.redirect('/home')
     })
 })
+
+
 
 module.exports = router;
