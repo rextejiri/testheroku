@@ -6,36 +6,51 @@
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <div class="header">
-      <header>
-        <% if (currentUser) {%>
-          <li>Hola <%=currentUser.username%></li>
-          <form action="/sessions?_method=DELETE" method="post">
-              <input type="submit" name="" value="Log Out">
-          </form>
-        <%} else { %>
-          <a href="/sessions/new">log in</a>
-          <a href="/users/new">Sign Up</a>
-        <%}%>
-      </header>
-    </div>
-    <%# header div ends here %>
-      <% for (var i = 0; i < products.length; i++) {%>
-        <div class="image">
-          <a href="/home/<%= products[i].id%>">
-          <img src="<%= products[i].img%>" alt="photo">
+    <div class="container">
+      <div class="header">
+        <header>
+          <% if (currentUser) {%>
+            <li>Hola <%=currentUser.username%></li>
+            <form action="/sessions?_method=DELETE" method="post">
+                <input type="submit" name="" value="Log Out">
+            </form>
+          <%} else { %>
+            <div class="navigation">
+              <a href="/sessions/new">
+                
+              </a>
+              <a href="/users/new">
+                <div class="log-in">
+                  <div class="login-logo">
+                    <img src="/images/log in.svg" alt="">
+                  </div>
+                  <p>Log In</p>
+                </div>
 
-          </a>
+              </a>
+            </div>
+          <%}%>
+        </header>
+      </div>
+      <%# header div ends here %>
+        <% for (var i = 0; i < products.length; i++) {%>
+          <div class="image">
+            <a href="/home/<%= products[i].id%>">
+            <img src="<%= products[i].img%>" alt="photo">
+
+            </a>
+          </div>
+        <%}%>
+        <div class="allcandles">
+          <p>All Candles</p>
         </div>
-      <%}%>
-      <div class="allcandles">
-        <p>All Candles</p>
-      </div>
-      <div class="allCandles">
-        <img src="" alt="photo">
-      </div>
-      <div class="footer">
-        <footer></footer>
-      </div>
+        <div class="allcandleImage">
+          <img src="/images/big_1.jpg" alt="">
+        </div>
+        <div class="footer">
+          <footer></footer>
+        </div>
+    </div>
+
   </body>
 </html>
