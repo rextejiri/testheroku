@@ -14,7 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
 }
 html, body {
   height: 100%;
@@ -119,6 +119,7 @@ h4{
   letter-spacing: 3%;
   line-height: 5px;
   margin-bottom: 35px;
+  color: var(--bodytext);
 }
 
 /* top candles div */
@@ -133,17 +134,17 @@ h4{
   overflow: auto;
   margin-left: 24px;
   align-self: stretch;
+  margin-bottom: 32px;
   /* padding-left: 40px; */
 }
 .top-candle-img{
   height: 300px;
   width: 300px;
-  /* margin-right: 16px; */
-
+  margin-right: 24px;
 }
 .candleImg:first-of-type{
-  width: 340px;
+  width: 300px;
   height: 300px;
-  margin-right: 16px;
-  align-self: flex-start;
+  border-radius: 4px;
+
 }
