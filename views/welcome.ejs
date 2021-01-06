@@ -54,27 +54,24 @@
       <div class="top-candles">
         <h4>Top Candles</h4>
       </div>
+      <div class="top-product">
         <% for (var i = 0; i < products.length; i++) {%>
-          <div class="top-product">
-            <a href="/home/<%= products[i].id%>">
-              <div class="">
-                <img src="<%= products[i].img%>" alt="photo">
+              <div class="top-candle-img">
+                <a href="/home/<%= products[i].id%>">
+                <img class="candleImg" src="<%= products[i].img%>" alt="photo" />
+                </a>
               </div>
-
-
-            </a>
-          </div>
         <%}%>
-
-        <div class="allcandles top-candles">
-          <h4>All Candles</h4>
-        </div>
-        <div class="allcandleImage">
-          <img src="/images/big_1.jpg" alt="">
-        </div>
-        <div class="footer">
-          <footer></footer>
-        </div>
+      </div>
+      <div class="allcandles top-candles">
+        <h4>All Candles</h4>
+      </div>
+      <div class="allcandleImage">
+        <img src="/images/big_1.jpg" alt="">
+      </div>
+      <div class="footer">
+        <footer></footer>
+      </div>
 
 
   </body>

@@ -122,3 +122,28 @@ h4{
 }
 
 /* top candles div */
+.top-product{
+  /* border: 1px solid green; */
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: auto;
+  margin-left: 24px;
+  align-self: stretch;
+  /* padding-left: 40px; */
+}
+.top-candle-img{
+  height: 300px;
+  width: 300px;
+  /* margin-right: 16px; */
+
+}
+.candleImg:first-of-type{
+  width: 340px;
+  height: 300px;
+  margin-right: 16px;
+  align-self: flex-start;
+}
