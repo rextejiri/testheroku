@@ -3,12 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <div class="container">
       <div class="header">
         <header>
+          <div class="logo">
+            <img src="/images/logo.svg" alt="" />
+          </div>
           <% if (currentUser) {%>
             <li>Hola <%=currentUser.username%></li>
             <form action="/sessions?_method=DELETE" method="post">
@@ -17,14 +23,18 @@
           <%} else { %>
             <div class="navigation">
               <a href="/sessions/new">
-                
-              </a>
-              <a href="/users/new">
                 <div class="log-in">
                   <div class="login-logo">
-                    <img src="/images/log in.svg" alt="">
+                    <img src="/images/sign up.svg" alt="" />
                   </div>
                   <p>Log In</p>
+              </a>
+              <a href="/user/new">
+                <div class="log-in">
+                  <div class="login-logo">
+                    <img src="/images/log in.svg" alt="" />
+                  </div>
+                  <p>Sign Up</p>
                 </div>
 
               </a>
@@ -33,14 +43,21 @@
         </header>
       </div>
       <%# header div ends here %>
+      <div class="top-candles">
+        <p>Top Candles</p>
+      </div>
         <% for (var i = 0; i < products.length; i++) {%>
-          <div class="image">
+          <div class="top-product">
             <a href="/home/<%= products[i].id%>">
-            <img src="<%= products[i].img%>" alt="photo">
+              <div class="">
+                <img src="<%= products[i].img%>" alt="photo">
+              </div>
+
 
             </a>
           </div>
         <%}%>
+
         <div class="allcandles">
           <p>All Candles</p>
         </div>

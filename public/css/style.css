@@ -1,11 +1,12 @@
 
 
 :root{
-  --fade60: rgba(0, 0, 0, 0.6);
+  --fade60: rgba(0,0,0,0.6);
   --footer: #474732;
-  --footerTextColor: rgba(255, 0, 0, 0.7);
-  --navigation: rgba(180, 183, 69, .35);
+  --footerTextColor: rgba(255,0,0,0.7);
+  --navigation: rgba(180,183,69,.35);
   --bodytext: #474732;
+  --transition: all 0.3s ease 0s;
 
 }
 
@@ -13,13 +14,65 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: 1px solid pink; */
 }
 html, body {
   height: 100%;
   overflow: auto;
+
 }
-img{
+.top-product{
   width: 300px;
   height: 300px;
 
+}
+p{
+  font-family: Philosopher, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header{
+  background:
+  linear-gradient(
+    var(--fade60),
+    var(--fade60)
+    ),
+    url(/images/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+
+}
+a{
+  display: inline-block;
+}
+.header{
+  width: 100%;
+  height: 337px;
+  left: 0px;
+  top: -1px;
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+ width: 400px;
+ text-align: center;
+margin-bottom: 72px;
+}
+.navigation{
+  width: 195px;
+  height: 47px;
+  align-self: center;
 }
