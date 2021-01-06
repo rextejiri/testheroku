@@ -64,7 +64,7 @@ router.get('/seed', (req, res) => {
       {
         name: 'TATINE',
         price: 43.00,
-        img: 'https://www.ikea.com/us/en/images/products/fenomen-unscented-block-candle-natural__0904463_PE586190_S5.JPG?f=s',
+        img: 'https://cdn.shopify.com/s/files/1/0315/1160/9388/products/Stars_are_Fire_SiloB-high-res_8f249c92-8d1d-401b-b956-49760d235d9b_900x.jpg?v=1598030521',
         img2: 'https://cdn.shopify.com/s/files/1/0315/1160/9388/products/Stars_are_Fire_Silo-high-res_dad5e3c9-ac8e-486e-8ec8-ab8948167d1f_1512x.jpg?v=1598030521',
         description: 'Spirit House Candle - 8 OZ',
 
@@ -72,7 +72,7 @@ router.get('/seed', (req, res) => {
       {
         name: 'TATINE',
         price: 43.00,
-        img: 'https://www.ikea.com/us/en/images/products/fenomen-unscented-block-candle-natural__0904463_PE586190_S5.JPG?f=s',
+        img: 'https://cdn.shopify.com/s/files/1/0315/1160/9388/products/Stars_are_Fire_SiloB-high-res_8f249c92-8d1d-401b-b956-49760d235d9b_900x.jpg?v=1598030521',
         img2: 'https://cdn.shopify.com/s/files/1/0315/1160/9388/products/Stars_are_Fire_Silo-high-res_dad5e3c9-ac8e-486e-8ec8-ab8948167d1f_1512x.jpg?v=1598030521',
         description: 'Spirit House Candle - 8 OZ',
 
