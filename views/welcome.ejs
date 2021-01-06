@@ -22,29 +22,37 @@
             </form>
           <%} else { %>
             <div class="navigation">
-              <a href="/sessions/new">
+
                 <div class="log-in">
                   <div class="login-logo">
-                    <img src="/images/sign up.svg" alt="" />
+                    <a href="/sessions/new">
+                    <img class="logo-image" src="/images/log in.svg" alt="" />
+                    <p>Log In</p>
+                    </a>
                   </div>
-                  <p>Log In</p>
-              </a>
-              <a href="/user/new">
-                <div class="log-in">
-                  <div class="login-logo">
-                    <img src="/images/log in.svg" alt="" />
-                  </div>
-                  <p>Sign Up</p>
                 </div>
 
-              </a>
-            </div>
+
+
+                <div class="sign-up">
+                  <div class="login-logo">
+                    <a href="/user/new">
+                    <img class="logo-image" src="/images/sign up.svg" alt="" />
+                    <p id="sign-up">Sign Up</p>
+                    </a>
+                  </div>
+
+                </div>
+
+
+
+          </div>
           <%}%>
         </header>
       </div>
       <%# header div ends here %>
       <div class="top-candles">
-        <p>Top Candles</p>
+        <h4>Top Candles</h4>
       </div>
         <% for (var i = 0; i < products.length; i++) {%>
           <div class="top-product">
@@ -67,7 +75,7 @@
         <div class="footer">
           <footer></footer>
         </div>
-    </div>
+
 
   </body>
 </html>

@@ -7,7 +7,7 @@
   --navigation: rgba(180,183,69,.35);
   --bodytext: #474732;
   --transition: all 0.3s ease 0s;
-
+  --dropshadow4-90: drop-shadow(4, 4, 4, rgba(0, 0, 0, 0.9);)
 }
 
 *{
@@ -28,7 +28,7 @@ html, body {
 }
 p{
   font-family: Philosopher, sans-serif;
-  font-size: 24px;
+  font-size: 8px;
   font-weight: 400;
 }
 .container{
@@ -69,10 +69,36 @@ a{
 .logo{
  width: 400px;
  text-align: center;
-margin-bottom: 72px;
+ margin-bottom: 66px;
+ height: 49px;
 }
 .navigation{
-  width: 195px;
+  width: 175px;
   height: 47px;
-  align-self: center;
+  margin-left: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: -60px;
+  margin-top: 75px;
+}
+
+.log-in{
+
+text-align: center;
+border: 0;
+
+}
+
+.sign-up{
+/* margin-bottom: -6px; */
+border: 0;
+text-align: center;
+}
+#sign-up{
+  margin-top: -6px;
+  text-align: center;
+}
+img:hover{
+transform: scale(1.02);
 }
