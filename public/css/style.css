@@ -360,6 +360,7 @@ font-style: normal;
 font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.045em;
+margin-top: 64px;
 
 }
 .top-product{
@@ -427,13 +428,34 @@ letter-spacing: 0.045em;
   align-self: center;
   padding-left: 64px;
   width: 98%;
-  margin-top: 120px;
+  /* margin-top: 120px; */
  margin: 0 auto;
  height: 769px;
 }
 
+.footer{
+  height: 782px;
+  opacity: 0.9;
+}
+/* 120+381 */
+
+footer{
+  height: 100%;
+  width: 100%;
+}
+.nav-footer{
+  height: 501px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-us, .contact-us{
+  
+}
 
 
+
+/* dont cross this line lol */
 }
 
 
