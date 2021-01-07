@@ -450,8 +450,36 @@ footer{
   align-items: center;
 }
 .about-us, .contact-us{
-  
+  height: 100%;
+  width: 381px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+
+
 }
+
+.contact-p, .aboutUs{
+  height: 381px;
+  width: 307px;
+  align-self: center;
+  /* border-radius: nullpx; */
+  margin-top: 16px;
+
+}
+
+.contact-p, .aboutUs{
+  font-family: Philosopher;
+  font-size: 24px;
+  font-weight: 400px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: center;
+
+}
+
+
 
 
 
