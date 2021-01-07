@@ -22,8 +22,8 @@ html, body {
 
 }
 .top-product{
-  width: 300px;
-  height: 300px;
+  width: 271px;
+  height: 271px;
 
 }
 p{
@@ -33,8 +33,10 @@ p{
   margin-left: -4px;
   margin-top: -4px;
   color: var(--navigation);
-  transition: var(--transition)
+  transition: var(--transition);
+  width: 60px;
 }
+
 p:hover{
   transform: scale(1.03);
   color: rgba(180,183,69,.70);
@@ -63,10 +65,11 @@ p:hover{
 a{
   display: inline-block;
   text-decoration: none;
+
 }
 .header{
   width: 100%;
-  height: 380px;
+  height: 337px;
   margin-bottom: 42px;
 }
 .header{
@@ -74,39 +77,63 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+}
+header{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 .logo{
- width: 400px;
+ width: 100%;
+ display: flex;
  text-align: center;
- margin-bottom: 66px;
+ /* margin-bottom: 66px; */
  height: 80px;
+ align-items: center;
+ /* justify-content: left; */
+ /* margin: 0 auto; */
+ /* margin-bottom: 75px;
+ margin-top: 119px; */
+ /* margin: 0 auto; */
+ padding-top: 20px;
+ padding-left: 60px;
+}
+.logo-image{
+height: 49px;
+margin: 0 auto;
+
 }
 .navigation{
-  width: 175px;
-  height: 47px;
-  margin-left: 110px;
+  width: 60%;
+  height: 54px;
+  /* margin-left: 110px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: -60px;
-  margin-top: 75px;
+  /* margin-bottom: -60px; */
+  padding-top: 75px;
+  /* padding-top: 20px; */
+  margin-left: -10px;
 }
 
 .log-in{
-
 text-align: center;
 border: 0;
+height: 32px;
 
 }
 
 .sign-up{
 /* margin-bottom: -6px; */
-border: 0;
+height: 32px;
 text-align: center;
 }
 #sign-up{
-  margin-top: -8px;
-  text-align: center;
+  margin-top: -6px;
+  /* text-align: center; */
   /* margin-bottom: -8px; */
 }
 .logo-image{
@@ -114,7 +141,6 @@ text-align: center;
 }
 .logo-image:hover{
 transform: scale(1.03);
-color: white;
 }
 /* header css ends here */
 
@@ -123,6 +149,7 @@ color: white;
 align-self: stretch;
 margin-left: 24px;
 text-align: left;
+/* height: 5px; */
 }
 h4{
   font-weight: 400;
@@ -132,12 +159,14 @@ h4{
   line-height: 5px;
   margin-bottom: 35px;
   color: var(--bodytext);
+  /* line-height: 5px; */
+
 }
 
 /* top candles div */
 .top-product{
   /* border: 1px solid green; */
-  height: 300px;
+  height: 271px;
   width: 100%;
   text-align: center;
   display: flex;
@@ -150,16 +179,19 @@ h4{
   /* padding-left: 40px; */
 }
 .top-candle-img{
-  height: 300px;
-  width: 300px;
-  margin-right: 24px;
+  height: 271px;
+  width: 271px;
+  margin-right: 16px;
 }
 .candleImg:first-of-type{
-  width: 300px;
-  height: 300px;
+  width: 271px;
+  height: 271px;
   border-radius: 4px;
 
+
 }
+/* end of top candles */
+
 
 .allcandleImage{
   height: 300px;
@@ -170,7 +202,7 @@ h4{
 }
 
 .footer{
-  align-self: flex-end;
+  /* align-self: flex-end; */
   height: 228px;
   width: 100%;
   background: var(--footer);
@@ -184,4 +216,19 @@ footer{
   align-items: center;
   justify-content: space-between;
   width: 40%;
+}
+.contact-us{
+margin-left: 43px;
+
+}
+.about-us{
+margin-right: 43px;
+}
+.nav-footer{
+  width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.contact-p{
 }

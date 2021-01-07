@@ -13,7 +13,9 @@
       <div class="header">
         <header>
           <div class="logo">
-            <img src="/images/logo.svg" alt="" />
+            <a href="/home/welcome">
+              <img class="logo-image" src="/images/logo.svg" alt="logo" />
+            </a>
           </div>
           <% if (currentUser) {%>
             <li>Hola <%=currentUser.username%></li>
@@ -22,17 +24,14 @@
             </form>
           <%} else { %>
             <div class="navigation">
-
                 <div class="log-in">
                   <div class="login-logo">
                     <a href="/sessions/new">
-                    <img class="logo-image" src="/images/log in.svg" alt="" />
+                    <img class="logo-image " src="/images/log in.svg" alt="" />
                     <p>Log In</p>
                     </a>
                   </div>
                 </div>
-
-
 
                 <div class="sign-up">
                   <div class="login-logo">
@@ -43,16 +42,16 @@
                   </div>
 
                 </div>
-
-
-
           </div>
           <%}%>
         </header>
       </div>
       <%# header div ends here %>
       <div class="top-candles">
-        <h4>Top Candles</h4>
+        <a href="/home">
+          <h4>Top Candles</h4>
+        </a>
+
       </div>
       <div class="top-product">
         <% for (var i = 0; i < products.length; i++) {%>
@@ -64,24 +63,29 @@
         <%}%>
       </div>
       <div class="allcandles top-candles">
-        <h4>All Candles</h4>
+        <a href="/home/">
+          <h4>All Candles</h4>
+        </a>
       </div>
       <div class="allcandleImage">
-        <img class="all-candle-img allcandleImage" src="/images/big_1.jpg" alt="">
+        <a href="/home/">
+          <img class="all-candle-img allcandleImage" src="/images/big_1.jpg" alt="photo">
+        </a>
+
       </div>
       <div class="footer">
         <footer>
-          <div class="about-us">
-          <img src="/images/about us.svg" alt="about us">
-          <p>About Us</p>
-          </div>
-          <div class="contact">
-          <img src="/images/contact us.svg" alt="contact us">
-          <p>Contact Us</p>
+          <div class="nav-footer">
+            <div class="about-us">
+            <img class="logo-image" src="/images/about us.svg" alt="about us">
+            <p>About Us</p>
+            </div>
+            <div class="contact-us">
+            <img class="logo-image" src="/images/contact us.svg" alt="contact us">
+            <p class="contact-p">Contact Us</p>
+            </div>
           </div>
         </footer>
       </div>
-
-
   </body>
 </html>
