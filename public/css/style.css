@@ -21,11 +21,12 @@ html, body {
   overflow: auto;
 
 }
-.top-product{
-  width: 271px;
-  height: 271px;
 
-}
+/* ====================== */
+/*  start
+/* ==================== */
+
+
 p{
   font-family: Philosopher, sans-serif;
   font-size: 12px;
@@ -90,14 +91,8 @@ header{
  width: 100%;
  display: flex;
  text-align: center;
- /* margin-bottom: 66px; */
  height: 80px;
  align-items: center;
- /* justify-content: left; */
- /* margin: 0 auto; */
- /* margin-bottom: 75px;
- margin-top: 119px; */
- /* margin: 0 auto; */
  padding-top: 20px;
  padding-left: 60px;
 }
@@ -109,13 +104,10 @@ margin: 0 auto;
 .navigation{
   width: 60%;
   height: 54px;
-  /* margin-left: 110px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin-bottom: -60px; */
   padding-top: 75px;
-  /* padding-top: 20px; */
   margin-left: -10px;
 }
 
@@ -127,14 +119,16 @@ height: 32px;
 }
 
 .sign-up{
-/* margin-bottom: -6px; */
-height: 32px;
+height: 40px;
 text-align: center;
+padding-top: 5px;
 }
 #sign-up{
-  margin-top: -6px;
-  /* text-align: center; */
-  /* margin-bottom: -8px; */
+
+  margin-top: -3px;
+}
+.login-img{
+  width: 45px;
 }
 .logo-image{
   transition: var(--transition)
@@ -142,14 +136,25 @@ text-align: center;
 .logo-image:hover{
 transform: scale(1.03);
 }
-/* header css ends here */
 
+/* ====================== */
+/* header css ends here */
+/* ==================== */
+
+/* ====================== */
+/* top candles begins */
+/* ==================== */
+
+.top-product{
+  width: 271px;
+  height: 271px;
+
+}
 
 .top-candles{
 align-self: stretch;
 margin-left: 24px;
 text-align: left;
-/* height: 5px; */
 }
 h4{
   font-weight: 400;
@@ -159,13 +164,9 @@ h4{
   line-height: 5px;
   margin-bottom: 35px;
   color: var(--bodytext);
-  /* line-height: 5px; */
-
 }
 
-/* top candles div */
 .top-product{
-  /* border: 1px solid green; */
   height: 271px;
   width: 100%;
   text-align: center;
@@ -173,16 +174,19 @@ h4{
   align-items: center;
   justify-content: space-between;
   overflow: auto;
-  margin-left: 24px;
   align-self: stretch;
   margin-bottom: 32px;
-  /* padding-left: 40px; */
 }
+
+
 .top-candle-img{
   height: 271px;
   width: 271px;
   margin-right: 16px;
+  margin-left: 24px;
 }
+
+
 .candleImg:first-of-type{
   width: 271px;
   height: 271px;
@@ -190,16 +194,41 @@ h4{
 
 
 }
+
+/* ====================== */
 /* end of top candles */
+/* ==================== */
+
+
+
+
+/* ====================== */
+/* all candle begins */
+/* ==================== */
+
 
 
 .allcandleImage{
   height: 300px;
   width: 100%;
   text-align: center;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-bottom: 35px;
 }
+
+.all-candle-img{
+  margin-left: 24px;
+  border-radius: 4px;
+}
+
+/* ====================== */
+/* end of all candles */
+/* ==================== */
+
+
+
+/* ====================== */
+/* footer begins */
+/* ==================== */
 
 .footer{
   /* align-self: flex-end; */
@@ -211,24 +240,34 @@ h4{
   align-items: center;
   justify-content: center;
 }
+
+
 footer{
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 40%;
 }
+
+
 .contact-us{
 margin-left: 43px;
 
 }
+
+
 .about-us{
 margin-right: 43px;
 }
+
+
 .nav-footer{
   width: 100%;
  display: flex;
  align-items: center;
  justify-content: space-between;
 }
-.contact-p{
-}
+
+/* ====================== */
+/* footer ends here*/
+/* ==================== */
