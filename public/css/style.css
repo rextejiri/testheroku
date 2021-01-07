@@ -14,7 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid pink; */
+  border: 1px solid pink;
 }
 html, body {
   height: 100%;
@@ -405,8 +405,42 @@ letter-spacing: 0.045em;
   color: var(--bodytext);
   opacity: 0.8;
 }
+.allcandleImage{
+  height: 769px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 91px;
+
 
 }
+.candle-link{
+  width:100%;
+  height: 100%;
+
+}
+
+.all-candle-img{
+  border-radius: 4px;
+  align-self: center;
+  padding-left: 64px;
+  width: 98%;
+  margin-top: 120px;
+ margin: 0 auto;
+ height: 769px;
+}
+
+
+
+}
+
+
+
+
+
+
 /* @media (max-width:720px) {
   .logo{
     margin-left: 140px;
