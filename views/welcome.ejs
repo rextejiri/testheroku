@@ -57,8 +57,11 @@
         <% for (var i = 0; i < products.length; i++) {%>
               <div class="top-candle-img">
                 <a href="/home/<%= products[i].id%>">
-                <img class="candleImg" src="<%= products[i].img%>" alt="photo" />
+                  <img class="candleImg" src="<%= products[i].img%>" alt="photo" />
                 </a>
+                <div class="description">
+                  <p class="about"><%=products[i].about%></p>
+                </div>
               </div>
         <%}%>
       </div>
