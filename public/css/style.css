@@ -14,7 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid pink; */
+  border: 1px solid pink;
 }
 html, body {
   height: 100%;
@@ -45,6 +45,7 @@ p:hover{
   width: 100%;
   align-items: center;
   justify-content: space-around;
+  margin: 0 auto;
 }
 
 .header{
@@ -181,5 +182,6 @@ h4{
 footer{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 40%;
 }
