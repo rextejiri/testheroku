@@ -14,7 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
 }
 html, body {
   height: 100%;
@@ -27,6 +27,9 @@ html, body {
 /* ==================== */
 .description{
   display: none;
+}
+.contact-p, .aboutUs{
+  display:none;
 }
 
 p{
@@ -47,7 +50,7 @@ p:hover{
 .container{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
@@ -436,6 +439,7 @@ margin-top: 64px;
 .footer{
   height: 782px;
   opacity: 0.9;
+  margin-top: 48px;
 }
 /* 120+381 */
 
@@ -461,6 +465,7 @@ footer{
 }
 
 .contact-p, .aboutUs{
+  display: block;
   height: 381px;
   width: 307px;
   align-self: center;
