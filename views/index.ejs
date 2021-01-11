@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
+  <%-include("partials/head.ejs")%>
   <body>
-    <h1>index page</h1>
-    <% if (currentUser) {%>
-      <li>Hola <%=currentUser.username%></li>
-      <form action="/sessions?_method=DELETE" method="post">
-          <input type="submit" name="" value="Log Out">
-      </form>
-    <%} else { %>
-      <a href="/sessions/new">log in</a>
-      <a href="/users/new">Sign Up</a>
-    <%}%>
+    <div class="container">
+      <%-include("partials/header.ejs")%>
 
-    <ul>
-      <% for (var i = 0; i < products.length; i++) {%>
-        <li>
+      <ul>
+        <% for (var i = 0; i < products.length; i++) {%>
+          <li>
 
-          <a href="/home/<%= products[i].id%>">
-            <%= products[i].name%>
-          <img src="<%= products[i].img%>" alt="">
+            <a href="/home/<%= products[i].id%>">
+              <%= products[i].name%>
+            <img src="<%= products[i].img%>" alt="photo">
 
-          </a>
-        </li>
-      <%}%>
-    </ul>
+            </a>
+          </li>
+        <%}%>
+      </ul>
+      <%- include("partials/footer.ejs")%>
+    </div>
+
 
   </body>
 </html>

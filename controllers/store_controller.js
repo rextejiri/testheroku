@@ -67,7 +67,7 @@ router.get('/seed', (req, res) => {
         img: 'https://cdn.shopify.com/s/files/1/0315/1160/9388/products/Stars_are_Fire_SiloB-high-res_8f249c92-8d1d-401b-b956-49760d235d9b_900x.jpg?v=1598030521',
         img2: 'https://cdn.shopify.com/s/files/1/0315/1160/9388/products/Stars_are_Fire_Silo-high-res_dad5e3c9-ac8e-486e-8ec8-ab8948167d1f_1512x.jpg?v=1598030521',
         description: 'Spirit House Candle - 8 OZ',
-        about: 'What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industrys standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?',
+        about: 'An uplifting blend of fire and spice with a vibrant background of citrus orange, mandarin, and coriander wrapped in a garland of violets and rose hips. A backdrop of lemongrass and wild lime leaves add tang to pimento and dried chilies. An ancient blend of vetiver and proprietary mah kwan pepper from Thailand have a cheerful effect on your mood and atmosphere.',
 
       },
       {
@@ -76,7 +76,7 @@ router.get('/seed', (req, res) => {
         img: 'https://cdn.shopify.com/s/files/1/0315/1160/9388/products/Stars_are_Fire_SiloB-high-res_8f249c92-8d1d-401b-b956-49760d235d9b_900x.jpg?v=1598030521',
         img2: 'https://cdn.shopify.com/s/files/1/0315/1160/9388/products/Stars_are_Fire_Silo-high-res_dad5e3c9-ac8e-486e-8ec8-ab8948167d1f_1512x.jpg?v=1598030521',
         description: 'Spirit House Candle - 8 OZ',
-        about: 'What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has',
+        about: 'An uplifting blend of fire and spice with a vibrant background of citrus orange, mandarin, and coriander wrapped in a garland of violets and rose hips. A backdrop of lemongrass and wild lime leaves add tang to pimento and dried chilies. An ancient blend of vetiver and proprietary mah kwan pepper from Thailand have a cheerful effect on your mood and atmosphere.',
 
         qty: 5,
       }

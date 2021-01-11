@@ -1,52 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
+  <%-include("partials/head.ejs")%>
   <body>
     <div class="container">
-      <div class="header">
-        <header>
-          <div class="logo">
-            <a class="link" href="/home/welcome">
-              <img class="logo-image ethan" src="/images/logo.svg" alt="logo" />
-            </a>
-          </div>
-          <% if (currentUser) {%>
-            <li>Hola <%=currentUser.username%></li>
-            <form action="/sessions?_method=DELETE" method="post">
-                <input type="submit" name="" value="Log Out">
-            </form>
-          <%} else { %>
-          <div class="navigation">
-              <div class="log-in">
-                  <div class="login-logo">
-                    <a class="link" href="/sessions/new">
-                    <img class="logo-image login-img" src="/images/log in.svg" alt="photo" />
-                    <p>Log In</p>
-                    </a>
-                  </div>
-              </div>
-
-              <div class="sign-up">
-                <div class="sign-up-logo">
-                  <a class="link" href="/user/new">
-                    <img class="logo-image signup-img" src="/images/sign up.svg" alt="" />
-                    <p id="sign-up">Sign Up</p>
-                  </a>
-                </div>
-
-              </div>
-          </div>
-          <%}%>
-        </header>
-      </div>
-      <!-- header div ends here -->
+      <%-include("partials/header.ejs")%>
       <div class="top-candles">
         <a href="/home">
           <h4>Top Candles</h4>
@@ -76,19 +33,7 @@
         </a>
 
       </div>
-      <div class="footer">
-        <footer>
-          <div class="nav-footer">
-            <div class="about-us">
-              <img class="logo-image" src="/images/about us.svg" alt="about us">
-              <p class="aboutUs">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="contact-us">
-              <img class="logo-image" src="/images/contact us.svg" alt="contact us">
-              <p class="contact-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate </p>
-            </div>
-          </div>
-        </footer>
-      </div>
+    </div>
+    <%- include("partials/footer.ejs")%>
   </body>
 </html>

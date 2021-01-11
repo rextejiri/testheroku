@@ -1,0 +1,36 @@
+<div class="header">
+  <header>
+    <div class="logo">
+      <a class="link" href="/home/welcome">
+        <img class="logo-image ethan" src="/images/logo.svg" alt="logo" />
+      </a>
+    </div>
+    <% if (currentUser) {%>
+      <li>Hola <%=currentUser.username%></li>
+      <form action="/sessions?_method=DELETE" method="post">
+          <input type="submit" name="" value="Log Out">
+      </form>
+    <%} else { %>
+    <div class="navigation">
+        <div class="log-in">
+            <div class="login-logo">
+              <a class="link" href="/sessions/new">
+              <img class="logo-image login-img" src="/images/log in.svg" alt="photo" />
+              <p>Log In</p>
+              </a>
+            </div>
+        </div>
+
+        <div class="sign-up">
+          <div class="sign-up-logo">
+            <a class="link" href="/user/new">
+              <img class="logo-image signup-img" src="/images/sign up.svg" alt="" />
+              <p id="sign-up">Sign Up</p>
+            </a>
+          </div>
+
+        </div>
+    </div>
+    <%}%>
+  </header>
+</div>
