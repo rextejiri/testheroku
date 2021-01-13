@@ -50,7 +50,7 @@ p:hover{
 .container{
   display: flex;
   flex-direction: column;
-  max-width: 100%;
+  width: 100%;
   align-items: center;
   justify-content: space-around;
   margin: 0 auto;
@@ -292,6 +292,17 @@ margin-right: 43px;
 /* ====================== */
 /* footer ends here*/
 /* ==================== */
+
+
+
+/* ====================== */
+/* index page*/
+/* ==================== */
+.index-container{
+  height: 85px;
+  width: 85px;
+  border-radius: 8px;
+}
 
 @media (min-width: 976px) {
 .header{
