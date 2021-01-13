@@ -14,7 +14,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid pink; */
+  border: 1px solid pink;
 }
 html, body {
   height: 100%;
@@ -401,12 +401,15 @@ margin-top: 64px;
 }
 
 .description{
-  height: 605px;
-  width: 447.845947265625px;
+  height: 520px;
+  width: 447px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:
+  align-items: center;
+  box-sizing: border-box;
+  margin-left: 21px;
+  margin-right: 21px;
 
 }
 .about{
@@ -493,6 +496,11 @@ footer{
   letter-spacing: 0.1em;
   text-align: center;
 
+}
+img{
+  /* filter: drop-shadow(var(--dropshadow4)); */
+  filter: drop-shadow(45px 4px 90px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
 }
 
 
