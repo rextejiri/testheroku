@@ -20,6 +20,7 @@ html, body {
   height: 100%;
   overflow: auto;
   background: #ffffff;
+  filter: brightness(90%);
 }
 
 /* ====================== */
@@ -237,7 +238,7 @@ h4{
   width: 100%;
   border-radius: 4px;
   object-fit: contain;
-  
+
 }
 
 /* ====================== */
@@ -312,7 +313,7 @@ margin-right: 43px;
 }
 body{
   background: #ffffff;
-
+  filter: brightness(90%);
 }
 header{
   width: 100%;
@@ -378,33 +379,30 @@ letter-spacing: 0.045em;
 margin-top: 64px;
 
 }
-/* .top-product{
+.top-product{
   height: 682px;
   width: 100%;
   overflow: auto;
-  border: 3px solid pink;
-} */
+}
 
-/* .top-candle-img{
+.top-candle-img{
   height: 100%;
   width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 3px solid pink;
-} */
+}
 
-/* .candleImg{
+.candleImg{
   height: 605px;
   width: 558.6719360351562px;
-  left: 80.35137939453125px;
-  top: 1215px;
-  border-radius: 0px;
 
-} */
+  object-fit: contain;
 
-/* .description{
-  height: 520px;
+}
+
+.description{
+  height: 420px;
   width: 447px;
   display: flex;
   flex-direction: column;
@@ -414,8 +412,8 @@ margin-top: 64px;
   margin-left: 21px;
   margin-right: 21px;
 
-} */
-/* .about{
+}
+.about{
   font-family: Philosopher;
   font-size: 32px;
   font-style: normal;
@@ -425,7 +423,7 @@ margin-top: 64px;
   text-align: center;
   color: var(--bodytext);
   opacity: 0.8;
-} */
+}
 .allcandleImage{
   height: 769px;
   text-align: center;
@@ -434,9 +432,6 @@ margin-top: 64px;
   justify-content: center;
   width: 100%;
   margin-bottom: 91px;
-  border: 3px solid green
-
-
 }
 .candle-link{
   width:100%;
