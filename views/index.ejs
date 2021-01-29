@@ -2,22 +2,21 @@
 <html lang="en" dir="ltr">
   <%-include("partials/head.ejs")%>
   <body>
-    <div class="container">
+    <div class="index">
       <%-include("partials/header.ejs")%>
-
-
+      <div class="index-div">
         <% for (var i = 0; i < products.length; i++) {%>
           <div class="index-container">
 
             <a href="/home/<%= products[i].id%>">
-              <p><%= products[i].name%></p>
             <div class="index-img">
-              <img src="<%= products[i].img%>" alt="photo">
+              <img class="" src="<%= products[i].img%>" alt="photo">
             </div>
-
+            <p class="name"><%= products[i].name%></p>
             </a>
           </div>
         <%}%>
+      </div>
       <%- include("partials/footer.ejs")%>
     </div>
 

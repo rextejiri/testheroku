@@ -22,7 +22,58 @@ html, body {
   background: #ffffff;
   filter: brightness(90%);
 }
+.index-container {
+  width: 60%;
+  /* border: 2px solid green; */
+  display: flex;
+  box-sizing: border-box;
+}
+.index-img {
+  width: 100%;
+  box-sizing: border-box;
+}
 
+.index-img > img {
+  width: 100%;
+}
+.name{
+  align-self: center;
+  /* border: 3px solid green; */
+
+}
+.index-container > a{
+  /* border: 3px solid green; */
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.index {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid blue; */
+
+}
+.index-div {
+  display: flex;
+  /* border: 3px solid red; */
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  margin-bottom: 24px;
+}
+.index-container {
+  width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 24px;
+}
 /* ====================== */
 /*  start
 /* ==================== */
@@ -104,21 +155,17 @@ a{
 .logo{
  width: 100%;
  display: flex;
- text-align: center;
+ align-content: center;
  height: 80px;
- align-items: center;
+ justify-content: center;
  padding-top: 20px;
- padding-left: 40px;
  /* position: absolute; */
 }
 .logo-image{
 height: 49px;
-margin: 0 auto;
-
 }
 
 .ethan{
-  padding-left: 30px;
 }
 
 .navigation{
@@ -260,6 +307,8 @@ h4{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  align-self: flex-end;
+
 }
 
 
@@ -326,16 +375,26 @@ header{
 }
 .logo{
   height: 231px;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 
 }
 .logo{
-  margin-left: -32px;
+  /* margin-left: -32px; */
 
 }
 .link{
   width: 100%;
   height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 .ethan{
   height: 100%;
@@ -345,6 +404,7 @@ header{
   width: 800px;
   margin-left: 32px;
   margin-top: 40px;
+
 }
 .log-in, .sign-up{
   width: 103.89px;
@@ -353,6 +413,7 @@ header{
 .login-logo, .sign-up-logo{
   width: 100%;
   height: 100%;
+
 }
 
 .login-img, .signup-img{
